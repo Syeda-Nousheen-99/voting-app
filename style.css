@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Nunito:wght@200;300;400;500;600;700&family=Roboto:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+    color: var(--text);
+}
+
+
+:root {
+    --bg: #403d39;
+    --box: #716969;
+    --text: #bcabae;
+    --black: #0f0f0f;
+}
+
+body {
+    background-image: url(./image/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--box);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+    font-size: 2rem;
+    color: #ffff;
+}
+
+.Enter_input {
+    margin: 1rem;
+}
+
+#nameAdd {
+    border: 1px solid var(--text);
+    background: transparent;
+    width: 15rem;
+    padding: .3rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color: #ffff;
+    outline: none;
+}
+
+#nameAdd::placeholder {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.btn {
+    background-image: url(./image/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .3rem;
+    border: 1px solid var(--box);
+    border-radius: .5rem;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+#candidates {
+    transition: .5s ease;
+    align-items: center;
+
+}
+
+#candidates li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ffffff;
+    margin-bottom: 1rem;
+    padding: .3rem 1.5rem;
+    border-radius: .6rem;
+
+}
+
+#candidates li span {
+    color: #ffffff;
+    font-weight: bolder;
+
+}
+
+#candidates li span:nth-child(3) {
+    cursor: pointer;
+    background-color: var(--bg);
+    padding: .5rem 1rem;
+   border-radius: 50%;
+}
+
+#candidates li:hover {
+    background-color: var(--box);
+    color: #0f0f0f;
+}
+
+/* #vote{
+    background-color: var(--hover);
+    padding: .4rem .9rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#vote:hover{
+    background-color: var(--bg);
+} */
